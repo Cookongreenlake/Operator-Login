@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  
+    <!--<form>
+       User First Name:<br> <input type="text" name="name"> 
+       <br>
+       <br>
+       User Last Name:<br> <input type="text" name="subject">
+       <br>    
+       <br>
+       Badge Number:<br> <input type="text" name="rank">
+    </form>-->
+
+
+    <!--<div class='wrapper'>
+        <form id='nameForm'>
+        <div class='form-uname'>
+            <label id='nameLable' for='nameField1'>Enter your first name:</label>
+            <input id='nameField' type='text' maxlength='25'></input>
+            <br>
+            <label id='nameLable' for='nameField2'>Enter your last name:</label>
+            <input id='nameField' type='text' maxlength='25'></input>
+        </div>
+        <div class='form-sub'>
+            <button id='subButton' type='button'>Print your name!</button>
+        </div>
+        </form>
+        
+        <div>
+            <p id='result'></p></div>
+    </div>-->
+</head>
+<body>
+<script>
+    
+//function getUserName() {
+//var nameField = document.getElementById('nameField').value;
+//var result = document.getElementById('result');
+
+//if (nameField.length > 20) {
+    //document.write("Username must contain less than 20 letters");
+    //alert('Username must contain at least 3 characters');
+//} //else {
+    //document.write("Your username is:" + nameField)
+    //alert(nameField);
+//}
+//}
+
+var name1 = window.prompt("Enter your first name: ");
+var name2 = window.prompt("Enter your last name: ");
+var badge = window.prompt("Enter your badge number: ")
+var i = name1.length + name2.length
+var access = false
+
+if ( i > 20 ) {
+    alert("Names must be less than 20 characters total!")
+    var name1 = window.prompt("Enter your first name: ");
+    var name2 = window.prompt("Enter your last name: ");
+    var badge = window.prompt("Enter your badge number");
+    var i = name1.length + name2.length
+
+
+    document.write("You have successfully logged into the UAT space program!")
+}
+  
+
+
+</script>
+</body>
+</html>
